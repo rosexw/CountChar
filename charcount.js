@@ -17,13 +17,16 @@ function countLetters (str) {
 
 console.log(countLetters(param));
 
-/*l: 0,
+/*
+should read:
+l: 0,
 i: 1, 10,
 g: 2,
 h: 3, 5, 13, 15,
 t: 4, 12,
 o: 6, 
 
+results:
 { l: '0',
   i: '1, 10',
   g: '2',
@@ -34,5 +37,17 @@ o: 6,
   s: '8, 18',
   e: '9, 14, 19',
   n: '11' }
+
+
+var params = process.argv.slice(2).join(‘’);
+
+function countLetters(letters) {
+  return letters.split(‘’).reduce(function(result, letter, index) {
+    result[letter] ? result[letter] += “, ” + index.toString() : result[letter] = index.toString();
+    return result;
+  }, {});
+};
+
+console.log(countLetters(params));
 
 */
