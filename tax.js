@@ -1,3 +1,9 @@
+/* w1d3
+3. Objects - Advanced Practice 
+Given the following data, implement a function that calculates the total sales and total tax, grouped by company.
+Implement the function calculateSalesTax that returns the results below.
+*/
+
  var salesTaxRates = {
   AB: 0.05,
   BC: 0.12,
